@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1057977081975",
+    "project_id": "the-sound-mind-journal-lrhvsb",
+    "storage_bucket": "the-sound-mind-journal-lrhvsb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1057977081975:android:3e803ea12c6d924dfb6672",
+        "android_client_info": {
+          "package_name": "com.mycompany.thesoundmindjournal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrLnqTN3BTLLiN_9-IfWcMIukVPTkHeH0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

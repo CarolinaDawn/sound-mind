@@ -26,6 +26,7 @@ class _ThankyouWidgetState extends State<ThankyouWidget> {
     super.initState();
     _model = createModel(context, () => ThankyouModel());
 
+    logFirebaseEvent('screen_view', parameters: {'screen_name': 'Thankyou'});
     WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 
@@ -254,6 +255,8 @@ class _ThankyouWidgetState extends State<ThankyouWidget> {
                                                 SystemMouseCursors.click,
                                             recognizer: TapGestureRecognizer()
                                               ..onTap = () async {
+                                                logFirebaseEvent(
+                                                    'THANKYOU_RichTextSpan_k55lj6x1_ON_TAP');
                                                 await launchURL(
                                                     'mailto:carolinadawnmoore@gmail.com');
                                               },
@@ -517,6 +520,8 @@ class _ThankyouWidgetState extends State<ThankyouWidget> {
                                                 SystemMouseCursors.click,
                                             recognizer: TapGestureRecognizer()
                                               ..onTap = () async {
+                                                logFirebaseEvent(
+                                                    'THANKYOU_RichTextSpan_8s62i4f7_ON_TAP');
                                                 await launchURL(
                                                     'https://www.facebook.com/soundmindjournal');
                                               },
@@ -636,6 +641,8 @@ class _ThankyouWidgetState extends State<ThankyouWidget> {
                                       hoverColor: Colors.transparent,
                                       highlightColor: Colors.transparent,
                                       onTap: () async {
+                                        logFirebaseEvent(
+                                            'THANKYOU_PAGE_Text_7peenkoc_ON_TAP');
                                         await launchURL(
                                             'mailto:carolinadawnmoore@gmail.com');
                                       },

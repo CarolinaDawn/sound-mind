@@ -61,6 +61,8 @@ class _TopNavWidgetState extends State<TopNavWidget> {
                 hoverColor: Colors.transparent,
                 highlightColor: Colors.transparent,
                 onTap: () async {
+                  logFirebaseEvent('TOP_NAV_COMP_lightMode_ON_TAP');
+
                   context.pushNamed('Home');
                 },
                 child: Image.asset(
@@ -91,6 +93,9 @@ class _TopNavWidgetState extends State<TopNavWidget> {
                           hoverColor: Colors.transparent,
                           highlightColor: Colors.transparent,
                           onTap: () async {
+                            logFirebaseEvent(
+                                'TOP_NAV_COMP_contentView_1_ON_TAP');
+
                             context.pushNamed('Home');
                           },
                           child: Container(
@@ -129,6 +134,9 @@ class _TopNavWidgetState extends State<TopNavWidget> {
                             hoverColor: Colors.transparent,
                             highlightColor: Colors.transparent,
                             onTap: () async {
+                              logFirebaseEvent(
+                                  'TOP_NAV_COMP_contentView_1_ON_TAP');
+
                               context.pushNamed('Store');
                             },
                             child: Container(
@@ -169,6 +177,9 @@ class _TopNavWidgetState extends State<TopNavWidget> {
                             hoverColor: Colors.transparent,
                             highlightColor: Colors.transparent,
                             onTap: () async {
+                              logFirebaseEvent(
+                                  'TOP_NAV_COMP_contentView_1_ON_TAP');
+
                               context.pushNamed('Community');
                             },
                             child: Container(
@@ -202,6 +213,9 @@ class _TopNavWidgetState extends State<TopNavWidget> {
                           hoverColor: Colors.transparent,
                           highlightColor: Colors.transparent,
                           onTap: () async {
+                            logFirebaseEvent(
+                                'TOP_NAV_COMP_contentView_1_ON_TAP');
+
                             context.pushNamed('About');
                           },
                           child: Container(
@@ -232,6 +246,7 @@ class _TopNavWidgetState extends State<TopNavWidget> {
                         hoverColor: Colors.transparent,
                         highlightColor: Colors.transparent,
                         onTap: () async {
+                          logFirebaseEvent('TOP_NAV_COMP_contentView_1_ON_TAP');
                           await launchURL(
                               'https://buy.stripe.com/9AQ29petE2J6fqo145');
                         },
@@ -289,6 +304,7 @@ class _TopNavWidgetState extends State<TopNavWidget> {
                         hoverColor: Colors.transparent,
                         highlightColor: Colors.transparent,
                         onTap: () async {
+                          logFirebaseEvent('TOP_NAV_COMP_contentView_1_ON_TAP');
                           showAlignedDialog(
                             context: context,
                             isGlobal: false,

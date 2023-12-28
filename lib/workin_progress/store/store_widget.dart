@@ -23,6 +23,7 @@ class _StoreWidgetState extends State<StoreWidget> {
     super.initState();
     _model = createModel(context, () => StoreModel());
 
+    logFirebaseEvent('screen_view', parameters: {'screen_name': 'Store'});
     WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 

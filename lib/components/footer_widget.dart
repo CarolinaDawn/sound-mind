@@ -138,6 +138,7 @@ class _FooterWidgetState extends State<FooterWidget> {
                         hoverColor: Colors.transparent,
                         highlightColor: Colors.transparent,
                         onTap: () async {
+                          logFirebaseEvent('FOOTER_COMP_Text_b85o5nbe_ON_TAP');
                           await launchURL('mailto:carolinadawnmoore@gmail.com');
                         },
                         child: Text(
@@ -155,6 +156,7 @@ class _FooterWidgetState extends State<FooterWidget> {
                         hoverColor: Colors.transparent,
                         highlightColor: Colors.transparent,
                         onTap: () async {
+                          logFirebaseEvent('FOOTER_COMP_Text_1e0eim6j_ON_TAP');
                           await launchURL('tel:214-699-8270');
                         },
                         child: Text(
@@ -196,6 +198,8 @@ class _FooterWidgetState extends State<FooterWidget> {
                               size: 24.0,
                             ),
                             onPressed: () async {
+                              logFirebaseEvent(
+                                  'FOOTER_COMP_facebook_ICN_ON_TAP');
                               await launchURL(
                                   'https://www.facebook.com/soundmindjournal');
                             },
@@ -227,6 +231,8 @@ class _FooterWidgetState extends State<FooterWidget> {
                               size: 24.0,
                             ),
                             onPressed: () async {
+                              logFirebaseEvent(
+                                  'FOOTER_COMP_instagram_ICN_ON_TAP');
                               await launchURL(
                                   'https://www.instagram.com/soundmindjournal/');
                             },
@@ -279,6 +285,8 @@ class _FooterWidgetState extends State<FooterWidget> {
                           hoverColor: Colors.transparent,
                           highlightColor: Colors.transparent,
                           onTap: () async {
+                            logFirebaseEvent(
+                                'FOOTER_COMP_Text_h7qbeiu7_ON_TAP');
                             await launchURL(
                                 'https://www.termsfeed.com/live/4645f677-35f1-4cbc-8e5a-471632ba5f80');
                           },
@@ -298,6 +306,8 @@ class _FooterWidgetState extends State<FooterWidget> {
                           hoverColor: Colors.transparent,
                           highlightColor: Colors.transparent,
                           onTap: () async {
+                            logFirebaseEvent(
+                                'FOOTER_COMP_Text_ach8rzb2_ON_TAP');
                             await launchURL(
                                 'https://www.termsandconditionsgenerator.com/live.php?token=9m2SOat3w1YC4aLMrCKb09gvkuxUNSfR');
                           },
@@ -317,6 +327,8 @@ class _FooterWidgetState extends State<FooterWidget> {
                           hoverColor: Colors.transparent,
                           highlightColor: Colors.transparent,
                           onTap: () async {
+                            logFirebaseEvent(
+                                'FOOTER_COMP_Text_p1w4gl34_ON_TAP');
                             await launchURL(
                                 'https://www.termsfeed.com/live/015477c1-0834-4633-9b68-3c5c637771a6');
                           },
@@ -336,6 +348,9 @@ class _FooterWidgetState extends State<FooterWidget> {
                           hoverColor: Colors.transparent,
                           highlightColor: Colors.transparent,
                           onTap: () async {
+                            logFirebaseEvent(
+                                'FOOTER_COMP_Text_tjkmpry8_ON_TAP');
+
                             context.pushNamed('ShippingPolicy');
                           },
                           child: Text(

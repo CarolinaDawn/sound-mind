@@ -26,6 +26,7 @@ class _HomeWidgetState extends State<HomeWidget> {
     super.initState();
     _model = createModel(context, () => HomeModel());
 
+    logFirebaseEvent('screen_view', parameters: {'screen_name': 'Home'});
     WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 
@@ -101,82 +102,36 @@ class _HomeWidgetState extends State<HomeWidget> {
                                   decoration: const BoxDecoration(
                                     color: Color(0x83FCFFFE),
                                   ),
-                                  child: Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
-                                        56.0, 36.0, 0.0, 0.0),
-                                    child: Column(
-                                      mainAxisSize: MainAxisSize.max,
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.center,
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.start,
-                                      children: [
-                                        Padding(
-                                          padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 0.0, 0.0, 12.0),
-                                          child: Container(
-                                            decoration: const BoxDecoration(),
-                                            child: Padding(
-                                              padding: const EdgeInsetsDirectional
-                                                  .fromSTEB(0.0, 0.0, 0.0, 8.0),
-                                              child: Text(
-                                                'Reflect with God',
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .displayLarge
-                                                        .override(
-                                                          fontFamily:
-                                                              'Merriweather',
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .primary,
-                                                          fontSize: () {
-                                                            if (MediaQuery.sizeOf(
-                                                                        context)
-                                                                    .width <
-                                                                kBreakpointSmall) {
-                                                              return 40.0;
-                                                            } else if (MediaQuery
-                                                                        .sizeOf(
-                                                                            context)
-                                                                    .width <
-                                                                kBreakpointMedium) {
-                                                              return 40.0;
-                                                            } else {
-                                                              return 64.0;
-                                                            }
-                                                          }(),
-                                                          fontStyle:
-                                                              FontStyle.italic,
-                                                          decoration:
-                                                              TextDecoration
-                                                                  .underline,
-                                                        ),
-                                              ),
-                                            ),
-                                          ),
-                                        ),
-                                        Flexible(
-                                          child: Padding(
+                                  child: Visibility(
+                                    visible: responsiveVisibility(
+                                      context: context,
+                                      phone: false,
+                                    ),
+                                    child: Padding(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                          56.0, 36.0, 0.0, 0.0),
+                                      child: Column(
+                                        mainAxisSize: MainAxisSize.max,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          Padding(
                                             padding:
                                                 const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 0.0, 0.0, 12.0),
                                             child: Container(
-                                              width: 450.0,
-                                              constraints: const BoxConstraints(
-                                                maxWidth: 750.0,
-                                              ),
                                               decoration: const BoxDecoration(),
                                               child: Padding(
                                                 padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 0.0, 0.0, 8.0),
                                                 child: Text(
-                                                  'Explore your faith with \'The Sound Mind Journal.\' Reflect on scripture and grow spiritually with this thought-provoking guided journal.',
+                                                  'Reflective Encounters',
                                                   style: FlutterFlowTheme.of(
                                                           context)
-                                                      .titleLarge
+                                                      .displayLarge
                                                       .override(
                                                         fontFamily:
                                                             'Merriweather',
@@ -189,90 +144,289 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                                       context)
                                                                   .width <
                                                               kBreakpointSmall) {
-                                                            return 16.0;
+                                                            return 40.0;
                                                           } else if (MediaQuery
                                                                       .sizeOf(
                                                                           context)
                                                                   .width <
                                                               kBreakpointMedium) {
-                                                            return 18.0;
+                                                            return 40.0;
                                                           } else {
-                                                            return 20.0;
+                                                            return 64.0;
                                                           }
                                                         }(),
-                                                        fontWeight:
-                                                            FontWeight.w600,
+                                                        fontStyle:
+                                                            FontStyle.italic,
                                                       ),
                                                 ),
                                               ),
                                             ),
                                           ),
-                                        ),
-                                        FFButtonWidget(
-                                          onPressed: () async {
-                                            await launchURL(
-                                                'https://buy.stripe.com/9AQ29petE2J6fqo145');
-                                          },
-                                          text: 'Buy Now!',
-                                          icon: Icon(
-                                            Icons.shopping_cart,
-                                            color: FlutterFlowTheme.of(context)
-                                                .secondaryBackground,
-                                            size: () {
-                                              if (MediaQuery.sizeOf(context)
-                                                      .width <
-                                                  kBreakpointSmall) {
-                                                return 18.0;
-                                              } else if (MediaQuery.sizeOf(
-                                                          context)
-                                                      .width <
-                                                  kBreakpointMedium) {
-                                                return 20.0;
-                                              } else {
-                                                return 22.0;
-                                              }
-                                            }(),
-                                          ),
-                                          options: FFButtonOptions(
-                                            width: 200.0,
-                                            height: 50.0,
-                                            padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
-                                                    24.0, 0.0, 24.0, 0.0),
-                                            iconPadding:
-                                                const EdgeInsetsDirectional.fromSTEB(
-                                                    0.0, 0.0, 0.0, 0.0),
-                                            color: FlutterFlowTheme.of(context)
-                                                .secondary,
-                                            textStyle: FlutterFlowTheme.of(
-                                                    context)
-                                                .headlineSmall
-                                                .override(
-                                                  fontFamily: 'Merriweather',
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .secondaryBackground,
-                                                  fontWeight: FontWeight.w600,
+                                          Flexible(
+                                            child: Padding(
+                                              padding: const EdgeInsets.all(8.0),
+                                              child: Container(
+                                                width: 450.0,
+                                                constraints: const BoxConstraints(
+                                                  maxWidth: 750.0,
                                                 ),
-                                            elevation: 3.0,
-                                            borderSide: const BorderSide(
-                                              color: Colors.transparent,
-                                              width: 1.0,
+                                                decoration: const BoxDecoration(
+                                                  color: Color(0x78F9F4E6),
+                                                ),
+                                                child: Padding(
+                                                  padding: const EdgeInsetsDirectional
+                                                      .fromSTEB(
+                                                          0.0, 0.0, 0.0, 8.0),
+                                                  child: Text(
+                                                    'Nurture devotion to and insight from the Holy Spirit with \'The Sound Mind Journal.\' Reflect on scripture and inspired affirmations with this guided journal.',
+                                                    style:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .titleLarge
+                                                            .override(
+                                                              fontFamily:
+                                                                  'Merriweather',
+                                                              color: FlutterFlowTheme
+                                                                      .of(context)
+                                                                  .primary,
+                                                              fontSize: () {
+                                                                if (MediaQuery.sizeOf(
+                                                                            context)
+                                                                        .width <
+                                                                    kBreakpointSmall) {
+                                                                  return 16.0;
+                                                                } else if (MediaQuery.sizeOf(
+                                                                            context)
+                                                                        .width <
+                                                                    kBreakpointMedium) {
+                                                                  return 18.0;
+                                                                } else {
+                                                                  return 20.0;
+                                                                }
+                                                              }(),
+                                                              fontWeight:
+                                                                  FontWeight
+                                                                      .w600,
+                                                            ),
+                                                  ),
+                                                ),
+                                              ),
                                             ),
-                                            borderRadius:
-                                                BorderRadius.circular(8.0),
-                                            hoverColor:
-                                                FlutterFlowTheme.of(context)
-                                                    .accent2,
-                                            hoverTextColor:
-                                                FlutterFlowTheme.of(context)
-                                                    .secondaryBackground,
+                                          ),
+                                          FFButtonWidget(
+                                            onPressed: () async {
+                                              logFirebaseEvent(
+                                                  'HOME_PAGE_BUY_NOW!_BTN_ON_TAP');
+                                              await launchURL(
+                                                  'https://buy.stripe.com/9AQ29petE2J6fqo145');
+                                            },
+                                            text: 'Buy Now!',
+                                            icon: Icon(
+                                              Icons.shopping_cart,
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .secondaryBackground,
+                                              size: () {
+                                                if (MediaQuery.sizeOf(context)
+                                                        .width <
+                                                    kBreakpointSmall) {
+                                                  return 18.0;
+                                                } else if (MediaQuery.sizeOf(
+                                                            context)
+                                                        .width <
+                                                    kBreakpointMedium) {
+                                                  return 20.0;
+                                                } else {
+                                                  return 22.0;
+                                                }
+                                              }(),
+                                            ),
+                                            options: FFButtonOptions(
+                                              width: 200.0,
+                                              height: 50.0,
+                                              padding: const EdgeInsetsDirectional
+                                                  .fromSTEB(
+                                                      24.0, 0.0, 24.0, 0.0),
+                                              iconPadding: const EdgeInsetsDirectional
+                                                  .fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .secondary,
+                                              textStyle: FlutterFlowTheme.of(
+                                                      context)
+                                                  .headlineSmall
+                                                  .override(
+                                                    fontFamily: 'Merriweather',
+                                                    color: FlutterFlowTheme.of(
+                                                            context)
+                                                        .secondaryBackground,
+                                                    fontWeight: FontWeight.w600,
+                                                  ),
+                                              elevation: 3.0,
+                                              borderSide: const BorderSide(
+                                                color: Colors.transparent,
+                                                width: 1.0,
+                                              ),
+                                              borderRadius:
+                                                  BorderRadius.circular(8.0),
+                                              hoverColor:
+                                                  FlutterFlowTheme.of(context)
+                                                      .accent2,
+                                              hoverTextColor:
+                                                  FlutterFlowTheme.of(context)
+                                                      .secondaryBackground,
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                if (responsiveVisibility(
+                                  context: context,
+                                  tablet: false,
+                                  tabletLandscape: false,
+                                  desktop: false,
+                                ))
+                                  Padding(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                        18.0, 24.0, 18.0, 0.0),
+                                    child: Column(
+                                      mainAxisSize: MainAxisSize.max,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.start,
+                                      children: [
+                                        Padding(
+                                          padding:
+                                              const EdgeInsetsDirectional.fromSTEB(
+                                                  0.0, 0.0, 0.0, 12.0),
+                                          child: Container(
+                                            decoration: const BoxDecoration(),
+                                            child: Padding(
+                                              padding: const EdgeInsetsDirectional
+                                                  .fromSTEB(0.0, 0.0, 0.0, 8.0),
+                                              child: Text(
+                                                'Reflective Encounters',
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .displayLarge
+                                                        .override(
+                                                          fontFamily:
+                                                              'Merriweather',
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .primary,
+                                                          fontSize: 55.0,
+                                                          fontStyle:
+                                                              FontStyle.italic,
+                                                        ),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding:
+                                              const EdgeInsetsDirectional.fromSTEB(
+                                                  0.0, 0.0, 0.0, 12.0),
+                                          child: Container(
+                                            width: double.infinity,
+                                            decoration: BoxDecoration(
+                                              color: const Color(0x78F9F4E6),
+                                              borderRadius:
+                                                  BorderRadius.circular(8.0),
+                                            ),
+                                            child: Padding(
+                                              padding: const EdgeInsets.all(8.0),
+                                              child: Text(
+                                                'Nurture devotion to and insight from the Holy Spirit with \'The Sound Mind Journal.\' Reflect on scripture and inspired affirmations with this guided journal.',
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleLarge
+                                                        .override(
+                                                          fontFamily:
+                                                              'Merriweather',
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .primary,
+                                                          fontSize: 18.0,
+                                                          fontWeight:
+                                                              FontWeight.w600,
+                                                        ),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                        Align(
+                                          alignment:
+                                              const AlignmentDirectional(-1.0, 0.0),
+                                          child: FFButtonWidget(
+                                            onPressed: () async {
+                                              logFirebaseEvent(
+                                                  'HOME_PAGE_BUY_NOW!_BTN_ON_TAP');
+                                              await launchURL(
+                                                  'https://buy.stripe.com/9AQ29petE2J6fqo145');
+                                            },
+                                            text: 'Buy Now!',
+                                            icon: Icon(
+                                              Icons.shopping_cart,
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .secondaryBackground,
+                                              size: () {
+                                                if (MediaQuery.sizeOf(context)
+                                                        .width <
+                                                    kBreakpointSmall) {
+                                                  return 18.0;
+                                                } else if (MediaQuery.sizeOf(
+                                                            context)
+                                                        .width <
+                                                    kBreakpointMedium) {
+                                                  return 20.0;
+                                                } else {
+                                                  return 22.0;
+                                                }
+                                              }(),
+                                            ),
+                                            options: FFButtonOptions(
+                                              width: 200.0,
+                                              height: 50.0,
+                                              padding: const EdgeInsetsDirectional
+                                                  .fromSTEB(
+                                                      24.0, 0.0, 24.0, 0.0),
+                                              iconPadding: const EdgeInsetsDirectional
+                                                  .fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .secondary,
+                                              textStyle: FlutterFlowTheme.of(
+                                                      context)
+                                                  .headlineSmall
+                                                  .override(
+                                                    fontFamily: 'Merriweather',
+                                                    color: FlutterFlowTheme.of(
+                                                            context)
+                                                        .secondaryBackground,
+                                                    fontWeight: FontWeight.w600,
+                                                  ),
+                                              elevation: 3.0,
+                                              borderSide: const BorderSide(
+                                                color: Colors.transparent,
+                                                width: 1.0,
+                                              ),
+                                              borderRadius:
+                                                  BorderRadius.circular(8.0),
+                                              hoverColor:
+                                                  FlutterFlowTheme.of(context)
+                                                      .accent2,
+                                              hoverTextColor:
+                                                  FlutterFlowTheme.of(context)
+                                                      .secondaryBackground,
+                                            ),
                                           ),
                                         ),
                                       ],
                                     ),
                                   ),
-                                ),
                               ],
                             ),
                           ),
@@ -321,6 +475,10 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                       .override(
                                                         fontFamily:
                                                             'Merriweather',
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .primary,
                                                         fontSize: 24.0,
                                                       ),
                                                 ),
@@ -566,7 +724,14 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                 'What is the Sound Mind Journal?',
                                                 style:
                                                     FlutterFlowTheme.of(context)
-                                                        .headlineLarge,
+                                                        .headlineLarge
+                                                        .override(
+                                                          fontFamily:
+                                                              'Merriweather',
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .primary,
+                                                        ),
                                               ),
                                             ),
                                             Container(
@@ -584,6 +749,10 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                       .override(
                                                         fontFamily:
                                                             'Merriweather',
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .primary,
                                                         fontSize: 18.0,
                                                         fontWeight:
                                                             FontWeight.w500,
@@ -760,6 +929,8 @@ class _HomeWidgetState extends State<HomeWidget> {
                                   alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: FFButtonWidget(
                                     onPressed: () async {
+                                      logFirebaseEvent(
+                                          'HOME_ORDER_YOUR_BOOK_NOW!_BTN_ON_TAP');
                                       await launchURL(
                                           'https://buy.stripe.com/9AQ29petE2J6fqo145');
                                     },
@@ -855,7 +1026,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                         color:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .primary,
+                                                                .primaryText,
                                                       ),
                                                 ),
                                               ),
@@ -1152,7 +1323,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                                     'Merriweather',
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .primary,
+                                                                    .primaryText,
                                                                 fontSize: 24.0,
                                                               ),
                                                         ),
@@ -1438,6 +1609,8 @@ class _HomeWidgetState extends State<HomeWidget> {
                                     alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: FFButtonWidget(
                                       onPressed: () async {
+                                        logFirebaseEvent(
+                                            'HOME_GET_YOURS_SHIPPED_TO_YOU!_BTN_ON_TA');
                                         await launchURL(
                                             'https://buy.stripe.com/9AQ29petE2J6fqo145');
                                       },
@@ -1521,6 +1694,9 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                         .override(
                                                           fontFamily:
                                                               'Merriweather',
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .primary,
                                                           fontSize: 24.0,
                                                         ),
                                                   ),
@@ -2168,7 +2344,15 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                   'What are some benefits of using this journal?',
                                                   style: FlutterFlowTheme.of(
                                                           context)
-                                                      .headlineLarge,
+                                                      .headlineLarge
+                                                      .override(
+                                                        fontFamily:
+                                                            'Merriweather',
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .primary,
+                                                      ),
                                                 ),
                                               ),
                                               Row(
@@ -2712,6 +2896,8 @@ class _HomeWidgetState extends State<HomeWidget> {
                                   alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: FFButtonWidget(
                                     onPressed: () async {
+                                      logFirebaseEvent(
+                                          'HOME_BUY_YOUR_JOURNAL_TODAY!_BTN_ON_TAP');
                                       await launchURL(
                                           'https://buy.stripe.com/9AQ29petE2J6fqo145');
                                     },

@@ -89,8 +89,10 @@ class _HomeWidgetState extends State<HomeWidget> {
                                     image: DecorationImage(
                                       fit: BoxFit.cover,
                                       alignment: const AlignmentDirectional(0.0, 0.0),
-                                      image: Image.asset(
-                                        'assets/images/Small_Water.png',
+                                      image: Image.network(
+                                        getCORSProxyUrl(
+                                          'https://images.unsplash.com/photo-1533000971552-6a962ff0b9f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHw1fHxiaWJsZXxlbnwwfHx8fDE3MDM4MDU2NDB8MA&ixlib=rb-4.0.3&q=80&w=400',
+                                        ),
                                       ).image,
                                     ),
                                   ),
@@ -906,8 +908,10 @@ class _HomeWidgetState extends State<HomeWidget> {
                                             ClipRRect(
                                               borderRadius:
                                                   BorderRadius.circular(8.0),
-                                              child: Image.asset(
-                                                'assets/images/IMG_1581.jpeg',
+                                              child: Image.network(
+                                                getCORSProxyUrl(
+                                                  'gs://the-sound-mind-journal-lrhvsb.appspot.com/IMG_1581.jpeg',
+                                                ),
                                                 width: 300.0,
                                                 height: 300.0,
                                                 fit: BoxFit.cover,
@@ -991,8 +995,10 @@ class _HomeWidgetState extends State<HomeWidget> {
                                               ClipRRect(
                                                 borderRadius:
                                                     BorderRadius.circular(8.0),
-                                                child: Image.asset(
-                                                  'assets/images/IMG_1586.jpeg',
+                                                child: Image.network(
+                                                  getCORSProxyUrl(
+                                                    'gs://the-sound-mind-journal-lrhvsb.appspot.com/IMG_1586.jpeg',
+                                                  ),
                                                   width: 300.0,
                                                   height: 400.0,
                                                   fit: BoxFit.cover,

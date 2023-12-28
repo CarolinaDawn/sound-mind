@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '/index.dart';
+import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 
 export 'package:go_router/go_router.dart';
@@ -29,12 +30,32 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       initialLocation: '/',
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
-      errorBuilder: (context, state) => const HomeWidget(),
+      errorBuilder: (context, state) => appStateNotifier.showSplashImage
+          ? Builder(
+              builder: (context) => Container(
+                color: FlutterFlowTheme.of(context).primaryBackground,
+                child: Image.asset(
+                  'assets/images/The_Sound_Mind_Journal.png',
+                  fit: BoxFit.none,
+                ),
+              ),
+            )
+          : const HomeWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
-          builder: (context, _) => const HomeWidget(),
+          builder: (context, _) => appStateNotifier.showSplashImage
+              ? Builder(
+                  builder: (context) => Container(
+                    color: FlutterFlowTheme.of(context).primaryBackground,
+                    child: Image.asset(
+                      'assets/images/The_Sound_Mind_Journal.png',
+                      fit: BoxFit.none,
+                    ),
+                  ),
+                )
+              : const HomeWidget(),
           routes: [
             FFRoute(
               name: 'Home',

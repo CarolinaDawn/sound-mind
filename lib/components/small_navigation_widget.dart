@@ -238,7 +238,7 @@ class _SmallNavigationWidgetState extends State<SmallNavigationWidget> {
                           padding: const EdgeInsetsDirectional.fromSTEB(
                               8.0, 0.0, 8.0, 0.0),
                           child: Text(
-                            'Buy Now!',
+                            'Add to Cart',
                             style: FlutterFlowTheme.of(context)
                                 .headlineSmall
                                 .override(

@@ -90,7 +90,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                       fit: BoxFit.cover,
                                       alignment: const AlignmentDirectional(0.0, 0.0),
                                       image: Image.asset(
-                                        'assets/images/small_unseen-studio-s9CC2SKySJM-unsplash_1.png',
+                                        'assets/images/Small_Water.png',
                                       ).image,
                                     ),
                                   ),
@@ -100,7 +100,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                   height:
                                       MediaQuery.sizeOf(context).height * 0.8,
                                   decoration: const BoxDecoration(
-                                    color: Color(0x83FCFFFE),
+                                    color: Color(0x73FCFFFE),
                                   ),
                                   child: Visibility(
                                     visible: responsiveVisibility(
@@ -123,58 +123,54 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                     0.0, 0.0, 0.0, 12.0),
                                             child: Container(
                                               decoration: const BoxDecoration(),
-                                              child: Padding(
-                                                padding: const EdgeInsetsDirectional
-                                                    .fromSTEB(
-                                                        0.0, 0.0, 0.0, 8.0),
-                                                child: Text(
-                                                  'Reflective Encounters',
-                                                  style: FlutterFlowTheme.of(
-                                                          context)
-                                                      .displayLarge
-                                                      .override(
-                                                        fontFamily:
-                                                            'Merriweather',
-                                                        color:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .primary,
-                                                        fontSize: () {
-                                                          if (MediaQuery.sizeOf(
-                                                                      context)
-                                                                  .width <
-                                                              kBreakpointSmall) {
-                                                            return 40.0;
-                                                          } else if (MediaQuery
-                                                                      .sizeOf(
-                                                                          context)
-                                                                  .width <
-                                                              kBreakpointMedium) {
-                                                            return 40.0;
-                                                          } else {
-                                                            return 64.0;
-                                                          }
-                                                        }(),
-                                                        fontStyle:
-                                                            FontStyle.italic,
-                                                      ),
-                                                ),
+                                              child: Text(
+                                                'Reflective Encounters',
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .displayLarge
+                                                        .override(
+                                                          fontFamily:
+                                                              'Merriweather',
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .primary,
+                                                          fontSize: () {
+                                                            if (MediaQuery.sizeOf(
+                                                                        context)
+                                                                    .width <
+                                                                kBreakpointSmall) {
+                                                              return 40.0;
+                                                            } else if (MediaQuery
+                                                                        .sizeOf(
+                                                                            context)
+                                                                    .width <
+                                                                kBreakpointMedium) {
+                                                              return 40.0;
+                                                            } else {
+                                                              return 64.0;
+                                                            }
+                                                          }(),
+                                                          fontStyle:
+                                                              FontStyle.italic,
+                                                        ),
                                               ),
                                             ),
                                           ),
                                           Flexible(
                                             child: Padding(
-                                              padding: const EdgeInsets.all(8.0),
+                                              padding: const EdgeInsetsDirectional
+                                                  .fromSTEB(
+                                                      0.0, 0.0, 0.0, 12.0),
                                               child: Container(
                                                 width: 450.0,
                                                 constraints: const BoxConstraints(
                                                   maxWidth: 750.0,
                                                 ),
                                                 decoration: const BoxDecoration(
-                                                  color: Color(0x78F9F4E6),
+                                                  color: Color(0x8CF9F4E6),
                                                 ),
                                                 child: Padding(
-                                                  padding: const EdgeInsets.all(8.0),
+                                                  padding: const EdgeInsets.all(12.0),
                                                   child: Text(
                                                     'Nurture devotion to and insight from the Holy Spirit with \'The Sound Mind Journal.\' Reflect on scripture and inspired affirmations with this guided journal.',
                                                     style:
@@ -1044,7 +1040,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                         decoration:
                                                             const BoxDecoration(),
                                                         child: Text(
-                                                          'This physical book starts each day with a scripture and a pre-crafted affirmation. Followed by space for reflection, this book offers a tangible way to record your thoughts and feelings as you delve into your daily devotion.',
+                                                          'This physical journal starts each day with a scripture and a pre-crafted affirmation. Followed by space for reflection, this book offers a tangible way to record your thoughts and feelings as you delve into your daily devotion.',
                                                           style: FlutterFlowTheme
                                                                   .of(context)
                                                               .titleLarge
@@ -1754,7 +1750,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                             FlutterFlowTheme.of(
                                                                     context)
                                                                 .secondaryText,
-                                                        size: 16.0,
+                                                        size: 12.0,
                                                       ),
                                                     ),
                                                     Container(
@@ -1860,7 +1856,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                             FlutterFlowTheme.of(
                                                                     context)
                                                                 .secondaryText,
-                                                        size: 16.0,
+                                                        size: 12.0,
                                                       ),
                                                     ),
                                                     Container(
@@ -1966,7 +1962,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                             FlutterFlowTheme.of(
                                                                     context)
                                                                 .secondaryText,
-                                                        size: 16.0,
+                                                        size: 12.0,
                                                       ),
                                                     ),
                                                     Container(
@@ -2072,7 +2068,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                             FlutterFlowTheme.of(
                                                                     context)
                                                                 .secondaryText,
-                                                        size: 16.0,
+                                                        size: 12.0,
                                                       ),
                                                     ),
                                                     Container(
@@ -2182,7 +2178,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                           color: FlutterFlowTheme
                                                                   .of(context)
                                                               .secondaryText,
-                                                          size: 16.0,
+                                                          size: 12.0,
                                                         ),
                                                       ),
                                                       Container(

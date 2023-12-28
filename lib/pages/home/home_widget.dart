@@ -1044,7 +1044,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                         decoration:
                                                             const BoxDecoration(),
                                                         child: Text(
-                                                          'This physical book starts each day with a scripture and a pre-crafted affirmation. Followed by space for reflection, this book offers a tangible way to record your thoughts and feelings as you delve into your daily devotion.',
+                                                          'This physical journal starts each day with a scripture and a pre-crafted affirmation. Followed by space for reflection, this book offers a tangible way to record your thoughts and feelings as you delve into your daily devotion.',
                                                           style: FlutterFlowTheme
                                                                   .of(context)
                                                               .titleLarge

@@ -22,6 +22,8 @@ class _ShippingPolicyWidgetState extends State<ShippingPolicyWidget> {
     super.initState();
     _model = createModel(context, () => ShippingPolicyModel());
 
+    logFirebaseEvent('screen_view',
+        parameters: {'screen_name': 'ShippingPolicy'});
     WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 

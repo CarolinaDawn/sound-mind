@@ -77,6 +77,9 @@ class _FooterStackWidgetState extends State<FooterStackWidget> {
                           hoverColor: Colors.transparent,
                           highlightColor: Colors.transparent,
                           onTap: () async {
+                            logFirebaseEvent(
+                                'FOOTER_STACK_COMP_Text_kfw25vby_ON_TAP');
+
                             context.pushNamed('Home');
                           },
                           child: Text(
@@ -95,6 +98,9 @@ class _FooterStackWidgetState extends State<FooterStackWidget> {
                           hoverColor: Colors.transparent,
                           highlightColor: Colors.transparent,
                           onTap: () async {
+                            logFirebaseEvent(
+                                'FOOTER_STACK_COMP_Text_3daaa3jx_ON_TAP');
+
                             context.pushNamed('About');
                           },
                           child: Text(
@@ -120,6 +126,9 @@ class _FooterStackWidgetState extends State<FooterStackWidget> {
                             hoverColor: Colors.transparent,
                             highlightColor: Colors.transparent,
                             onTap: () async {
+                              logFirebaseEvent(
+                                  'FOOTER_STACK_COMP_Text_vsfba52u_ON_TAP');
+
                               context.pushNamed('Store');
                             },
                             child: Text(
@@ -149,6 +158,9 @@ class _FooterStackWidgetState extends State<FooterStackWidget> {
                                 hoverColor: Colors.transparent,
                                 highlightColor: Colors.transparent,
                                 onTap: () async {
+                                  logFirebaseEvent(
+                                      'FOOTER_STACK_COMP_Text_kg6gi9tz_ON_TAP');
+
                                   context.pushNamed('Community');
                                 },
                                 child: Text(
@@ -197,6 +209,8 @@ class _FooterStackWidgetState extends State<FooterStackWidget> {
                                   size: 24.0,
                                 ),
                                 onPressed: () async {
+                                  logFirebaseEvent(
+                                      'FOOTER_STACK_COMP_facebook_ICN_ON_TAP');
                                   await launchURL(
                                       'https://www.facebook.com/soundmindjournal');
                                 },
@@ -228,6 +242,8 @@ class _FooterStackWidgetState extends State<FooterStackWidget> {
                                   size: 24.0,
                                 ),
                                 onPressed: () async {
+                                  logFirebaseEvent(
+                                      'FOOTER_STACK_COMP_instagram_ICN_ON_TAP');
                                   await launchURL(
                                       'https://www.instagram.com/soundmindjournal/');
                                 },
@@ -292,6 +308,8 @@ class _FooterStackWidgetState extends State<FooterStackWidget> {
                             hoverColor: Colors.transparent,
                             highlightColor: Colors.transparent,
                             onTap: () async {
+                              logFirebaseEvent(
+                                  'FOOTER_STACK_COMP_Text_slioovpy_ON_TAP');
                               await launchURL(
                                   'mailto:carolinadawnmoore@gmail.com');
                             },
@@ -311,6 +329,8 @@ class _FooterStackWidgetState extends State<FooterStackWidget> {
                             hoverColor: Colors.transparent,
                             highlightColor: Colors.transparent,
                             onTap: () async {
+                              logFirebaseEvent(
+                                  'FOOTER_STACK_COMP_Text_qw0g8t7k_ON_TAP');
                               await launchURL('tel:214-699-8270');
                             },
                             child: Text(
@@ -358,6 +378,8 @@ class _FooterStackWidgetState extends State<FooterStackWidget> {
                         hoverColor: Colors.transparent,
                         highlightColor: Colors.transparent,
                         onTap: () async {
+                          logFirebaseEvent(
+                              'FOOTER_STACK_COMP_Text_2ihuamh1_ON_TAP');
                           await launchURL(
                               'https://www.termsfeed.com/live/4645f677-35f1-4cbc-8e5a-471632ba5f80');
                         },
@@ -376,6 +398,8 @@ class _FooterStackWidgetState extends State<FooterStackWidget> {
                         hoverColor: Colors.transparent,
                         highlightColor: Colors.transparent,
                         onTap: () async {
+                          logFirebaseEvent(
+                              'FOOTER_STACK_COMP_Text_56rkl1tv_ON_TAP');
                           await launchURL(
                               'https://www.termsandconditionsgenerator.com/live.php?token=9m2SOat3w1YC4aLMrCKb09gvkuxUNSfR');
                         },
@@ -394,6 +418,8 @@ class _FooterStackWidgetState extends State<FooterStackWidget> {
                         hoverColor: Colors.transparent,
                         highlightColor: Colors.transparent,
                         onTap: () async {
+                          logFirebaseEvent(
+                              'FOOTER_STACK_COMP_Text_v8hubt5j_ON_TAP');
                           await launchURL(
                               'https://www.termsfeed.com/live/015477c1-0834-4633-9b68-3c5c637771a6');
                         },
@@ -412,6 +438,9 @@ class _FooterStackWidgetState extends State<FooterStackWidget> {
                         hoverColor: Colors.transparent,
                         highlightColor: Colors.transparent,
                         onTap: () async {
+                          logFirebaseEvent(
+                              'FOOTER_STACK_COMP_Text_eiuv91a2_ON_TAP');
+
                           context.pushNamed('ShippingPolicy');
                         },
                         child: Text(

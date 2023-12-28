@@ -64,6 +64,8 @@ class _SmallNavigationWidgetState extends State<SmallNavigationWidget> {
                   hoverColor: Colors.transparent,
                   highlightColor: Colors.transparent,
                   onTap: () async {
+                    logFirebaseEvent(
+                        'SMALL_NAVIGATION_Container_wk0j6imy_ON_T');
                     Navigator.pop(context);
                   },
                   child: Container(
@@ -84,6 +86,8 @@ class _SmallNavigationWidgetState extends State<SmallNavigationWidget> {
                 hoverColor: Colors.transparent,
                 highlightColor: Colors.transparent,
                 onTap: () async {
+                  logFirebaseEvent('SMALL_NAVIGATION_contentView_1_ON_TAP');
+
                   context.pushNamed('Home');
                 },
                 child: Container(
@@ -117,6 +121,8 @@ class _SmallNavigationWidgetState extends State<SmallNavigationWidget> {
                   hoverColor: Colors.transparent,
                   highlightColor: Colors.transparent,
                   onTap: () async {
+                    logFirebaseEvent('SMALL_NAVIGATION_contentView_1_ON_TAP');
+
                     context.pushNamed('Store');
                   },
                   child: Container(
@@ -151,6 +157,8 @@ class _SmallNavigationWidgetState extends State<SmallNavigationWidget> {
                   hoverColor: Colors.transparent,
                   highlightColor: Colors.transparent,
                   onTap: () async {
+                    logFirebaseEvent('SMALL_NAVIGATION_contentView_1_ON_TAP');
+
                     context.pushNamed('Community');
                   },
                   child: Container(
@@ -180,6 +188,8 @@ class _SmallNavigationWidgetState extends State<SmallNavigationWidget> {
                   hoverColor: Colors.transparent,
                   highlightColor: Colors.transparent,
                   onTap: () async {
+                    logFirebaseEvent('SMALL_NAVIGATION_contentView_1_ON_TAP');
+
                     context.pushNamed('About');
                   },
                   child: Container(
@@ -208,6 +218,7 @@ class _SmallNavigationWidgetState extends State<SmallNavigationWidget> {
                 hoverColor: Colors.transparent,
                 highlightColor: Colors.transparent,
                 onTap: () async {
+                  logFirebaseEvent('SMALL_NAVIGATION_contentView_1_ON_TAP');
                   await launchURL('https://buy.stripe.com/9AQ29petE2J6fqo145');
                 },
                 child: Container(

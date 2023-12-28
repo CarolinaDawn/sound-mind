@@ -23,6 +23,7 @@ class _CommunityWidgetState extends State<CommunityWidget> {
     super.initState();
     _model = createModel(context, () => CommunityModel());
 
+    logFirebaseEvent('screen_view', parameters: {'screen_name': 'Community'});
     WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 

@@ -174,9 +174,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                   color: Color(0x78F9F4E6),
                                                 ),
                                                 child: Padding(
-                                                  padding: const EdgeInsetsDirectional
-                                                      .fromSTEB(
-                                                          0.0, 0.0, 0.0, 8.0),
+                                                  padding: const EdgeInsets.all(8.0),
                                                   child: Text(
                                                     'Nurture devotion to and insight from the Holy Spirit with \'The Sound Mind Journal.\' Reflect on scripture and inspired affirmations with this guided journal.',
                                                     style:

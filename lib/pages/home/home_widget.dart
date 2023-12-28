@@ -90,9 +90,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                       fit: BoxFit.cover,
                                       alignment: const AlignmentDirectional(0.0, 0.0),
                                       image: Image.network(
-                                        getCORSProxyUrl(
-                                          'https://images.unsplash.com/photo-1533000971552-6a962ff0b9f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHw1fHxiaWJsZXxlbnwwfHx8fDE3MDM4MDU2NDB8MA&ixlib=rb-4.0.3&q=80&w=400',
-                                        ),
+                                        'https://images.unsplash.com/photo-1533000971552-6a962ff0b9f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHw1fHxiaWJsZXxlbnwwfHx8fDE3MDM4MDU2NDB8MA&ixlib=rb-4.0.3&q=80&w=400',
                                       ).image,
                                     ),
                                   ),
@@ -162,7 +160,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                             child: Padding(
                                               padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
-                                                      0.0, 0.0, 0.0, 12.0),
+                                                      0.0, 0.0, 0.0, 24.0),
                                               child: Container(
                                                 width: 450.0,
                                                 constraints: const BoxConstraints(
@@ -286,7 +284,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                 ))
                                   Padding(
                                     padding: const EdgeInsetsDirectional.fromSTEB(
-                                        18.0, 24.0, 18.0, 0.0),
+                                        18.0, 45.0, 18.0, 0.0),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
                                       mainAxisAlignment:
@@ -323,7 +321,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                         Padding(
                                           padding:
                                               const EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 0.0, 0.0, 12.0),
+                                                  0.0, 0.0, 0.0, 24.0),
                                           child: Container(
                                             width: double.infinity,
                                             decoration: BoxDecoration(
@@ -683,7 +681,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                         BorderRadius.circular(
                                                             8.0),
                                                     child: Image.asset(
-                                                      'assets/images/IMG_1581.jpeg',
+                                                      'assets/images/Closed_Small.jpeg',
                                                       width: 300.0,
                                                       height: 300.0,
                                                       fit: BoxFit.cover,
@@ -908,10 +906,8 @@ class _HomeWidgetState extends State<HomeWidget> {
                                             ClipRRect(
                                               borderRadius:
                                                   BorderRadius.circular(8.0),
-                                              child: Image.network(
-                                                getCORSProxyUrl(
-                                                  'gs://the-sound-mind-journal-lrhvsb.appspot.com/IMG_1581.jpeg',
-                                                ),
+                                              child: Image.asset(
+                                                'assets/images/Closed_Small.jpeg',
                                                 width: 300.0,
                                                 height: 300.0,
                                                 fit: BoxFit.cover,
@@ -995,10 +991,8 @@ class _HomeWidgetState extends State<HomeWidget> {
                                               ClipRRect(
                                                 borderRadius:
                                                     BorderRadius.circular(8.0),
-                                                child: Image.network(
-                                                  getCORSProxyUrl(
-                                                    'gs://the-sound-mind-journal-lrhvsb.appspot.com/IMG_1586.jpeg',
-                                                  ),
+                                                child: Image.asset(
+                                                  'assets/images/Open_Small.jpeg',
                                                   width: 300.0,
                                                   height: 400.0,
                                                   fit: BoxFit.cover,
@@ -1079,7 +1073,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                           FlutterFlowTheme.of(
                                                                   context)
                                                               .primaryText,
-                                                      size: 32.0,
+                                                      size: 18.0,
                                                     ),
                                                   ),
                                                   Container(
@@ -1121,7 +1115,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                           FlutterFlowTheme.of(
                                                                   context)
                                                               .primaryText,
-                                                      size: 32.0,
+                                                      size: 18.0,
                                                     ),
                                                   ),
                                                   Container(
@@ -1163,7 +1157,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                           FlutterFlowTheme.of(
                                                                   context)
                                                               .primaryText,
-                                                      size: 32.0,
+                                                      size: 18.0,
                                                     ),
                                                   ),
                                                   Container(
@@ -1205,7 +1199,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                           FlutterFlowTheme.of(
                                                                   context)
                                                               .primaryText,
-                                                      size: 32.0,
+                                                      size: 18.0,
                                                     ),
                                                   ),
                                                   Container(
@@ -1290,7 +1284,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                         BorderRadius.circular(
                                                             8.0),
                                                     child: Image.asset(
-                                                      'assets/images/IMG_1586.jpeg',
+                                                      'assets/images/Open_Small.jpeg',
                                                       width: 150.0,
                                                       height: 200.0,
                                                       fit: BoxFit.cover,
@@ -1728,7 +1722,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                                       .primary,
                                                                   fontWeight:
                                                                       FontWeight
-                                                                          .w600,
+                                                                          .w500,
                                                                   lineHeight:
                                                                       1.3,
                                                                 ),
@@ -2304,7 +2298,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                                       .primary,
                                                                   fontWeight:
                                                                       FontWeight
-                                                                          .w600,
+                                                                          .w500,
                                                                   lineHeight:
                                                                       1.3,
                                                                 ),
@@ -2378,7 +2372,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                                 fontSize: 18.0,
                                                                 fontWeight:
                                                                     FontWeight
-                                                                        .w600,
+                                                                        .w500,
                                                                 lineHeight: 1.3,
                                                               ),
                                                     ),
@@ -2401,7 +2395,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                           FlutterFlowTheme.of(
                                                                   context)
                                                               .secondaryText,
-                                                      size: 20.0,
+                                                      size: 18.0,
                                                     ),
                                                   ),
                                                   Container(
@@ -2496,7 +2490,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                           FlutterFlowTheme.of(
                                                                   context)
                                                               .secondaryText,
-                                                      size: 20.0,
+                                                      size: 18.0,
                                                     ),
                                                   ),
                                                   Container(
@@ -2587,7 +2581,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                           FlutterFlowTheme.of(
                                                                   context)
                                                               .secondaryText,
-                                                      size: 20.0,
+                                                      size: 18.0,
                                                     ),
                                                   ),
                                                   Container(
@@ -2678,7 +2672,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                           FlutterFlowTheme.of(
                                                                   context)
                                                               .secondaryText,
-                                                      size: 20.0,
+                                                      size: 18.0,
                                                     ),
                                                   ),
                                                   Container(
@@ -2777,7 +2771,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                             FlutterFlowTheme.of(
                                                                     context)
                                                                 .secondaryText,
-                                                        size: 20.0,
+                                                        size: 18.0,
                                                       ),
                                                     ),
                                                     Container(
@@ -2879,7 +2873,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                                 fontSize: 18.0,
                                                                 fontWeight:
                                                                     FontWeight
-                                                                        .w600,
+                                                                        .w500,
                                                                 lineHeight: 1.3,
                                                               ),
                                                     ),

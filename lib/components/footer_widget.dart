@@ -352,12 +352,23 @@ class _FooterWidgetState extends State<FooterWidget> {
                 ],
               ),
             ),
-            Text(
-              '© 2023 Carolina Dawn. All rights reserved.',
-              style: FlutterFlowTheme.of(context).bodySmall.override(
-                    fontFamily: 'Open Sans',
-                    color: FlutterFlowTheme.of(context).primary,
-                  ),
+            InkWell(
+              splashColor: Colors.transparent,
+              focusColor: Colors.transparent,
+              hoverColor: Colors.transparent,
+              highlightColor: Colors.transparent,
+              onTap: () async {
+                logFirebaseEvent('FOOTER_COMP_Text_mac2xwhy_ON_TAP');
+
+                context.pushNamed('Thankyou');
+              },
+              child: Text(
+                '© 2023 Carolina Dawn. All rights reserved.',
+                style: FlutterFlowTheme.of(context).bodySmall.override(
+                      fontFamily: 'Open Sans',
+                      color: FlutterFlowTheme.of(context).primary,
+                    ),
+              ),
             ),
           ],
         ),

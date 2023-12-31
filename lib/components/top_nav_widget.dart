@@ -257,6 +257,7 @@ class _TopNavWidgetState extends State<TopNavWidget> {
                             borderRadius: BorderRadius.circular(12.0),
                             shape: BoxShape.rectangle,
                           ),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: Row(

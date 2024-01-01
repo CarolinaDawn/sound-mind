@@ -684,7 +684,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                         BorderRadius.circular(
                                                             8.0),
                                                     child: Image.asset(
-                                                      'assets/images/Closed_Small.jpeg',
+                                                      'assets/images/Outside_Closed.jpg',
                                                       width: 300.0,
                                                       height: 300.0,
                                                       fit: BoxFit.cover,
@@ -910,7 +910,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                               borderRadius:
                                                   BorderRadius.circular(8.0),
                                               child: Image.asset(
-                                                'assets/images/Closed_Small.jpeg',
+                                                'assets/images/Outside_Closed.jpg',
                                                 width: 300.0,
                                                 height: 300.0,
                                                 fit: BoxFit.cover,
@@ -995,7 +995,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                 borderRadius:
                                                     BorderRadius.circular(8.0),
                                                 child: Image.asset(
-                                                  'assets/images/Open_Small.jpeg',
+                                                  'assets/images/Outside_Open.jpg',
                                                   width: 300.0,
                                                   height: 400.0,
                                                   fit: BoxFit.cover,
@@ -1287,7 +1287,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                         BorderRadius.circular(
                                                             8.0),
                                                     child: Image.asset(
-                                                      'assets/images/Open_Small.jpeg',
+                                                      'assets/images/Outside_Open.jpg',
                                                       width: 150.0,
                                                       height: 200.0,
                                                       fit: BoxFit.cover,

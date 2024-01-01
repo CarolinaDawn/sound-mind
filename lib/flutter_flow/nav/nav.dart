@@ -84,7 +84,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
             ),
             FFRoute(
               name: 'Thankyou',
-              path: 'thankyou',
+              path: 'confirmation',
               builder: (context, params) => const ThankyouWidget(),
             )
           ].map((r) => r.toRoute(appStateNotifier)).toList(),

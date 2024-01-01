@@ -49,7 +49,7 @@ class _ThankyouWidgetState extends State<ThankyouWidget> {
     }
 
     return Title(
-        title: 'Thankyou',
+        title: 'Thank You',
         color: FlutterFlowTheme.of(context).primary.withAlpha(0XFF),
         child: GestureDetector(
           onTap: () => _model.unfocusNode.canRequestFocus
@@ -183,7 +183,7 @@ class _ThankyouWidgetState extends State<ThankyouWidget> {
                                     padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 4.0),
                                     child: Text(
-                                      'Delivery Notice:',
+                                      'Delivery Information:',
                                       style: FlutterFlowTheme.of(context)
                                           .titleLarge
                                           .override(

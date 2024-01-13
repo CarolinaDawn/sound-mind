@@ -363,7 +363,7 @@ class _FooterWidgetState extends State<FooterWidget> {
                 context.pushNamed('Thankyou');
               },
               child: Text(
-                '© 2023 Carolina Dawn. All rights reserved.',
+                '© 2024 Carolina Dawn. All rights reserved.',
                 style: FlutterFlowTheme.of(context).bodySmall.override(
                       fontFamily: 'Open Sans',
                       color: FlutterFlowTheme.of(context).primary,

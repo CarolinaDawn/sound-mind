@@ -48,75 +48,72 @@ class _FooterWidgetState extends State<FooterWidget> {
         child: Column(
           mainAxisSize: MainAxisSize.max,
           children: [
-            Padding(
-              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 24.0),
-              child: Row(
-                mainAxisSize: MainAxisSize.max,
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  Column(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      Padding(
-                        padding:
-                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
-                        child: Text(
-                          'Navigation',
-                          style: FlutterFlowTheme.of(context)
-                              .headlineSmall
-                              .override(
-                                fontFamily: 'Merriweather',
-                                fontWeight: FontWeight.w600,
-                              ),
-                        ),
+            Row(
+              mainAxisSize: MainAxisSize.max,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Padding(
+                      padding:
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                      child: Text(
+                        'Navigation',
+                        style:
+                            FlutterFlowTheme.of(context).headlineSmall.override(
+                                  fontFamily: 'Merriweather',
+                                  fontWeight: FontWeight.w600,
+                                ),
                       ),
+                    ),
+                    Text(
+                      'Home',
+                      style: FlutterFlowTheme.of(context).bodySmall.override(
+                            fontFamily: 'Open Sans',
+                            color: FlutterFlowTheme.of(context).primary,
+                          ),
+                    ),
+                    Text(
+                      'About',
+                      style: FlutterFlowTheme.of(context).bodySmall.override(
+                            fontFamily: 'Open Sans',
+                            color: FlutterFlowTheme.of(context).primary,
+                          ),
+                    ),
+                    if (responsiveVisibility(
+                      context: context,
+                      phone: false,
+                      tablet: false,
+                      tabletLandscape: false,
+                      desktop: false,
+                    ))
                       Text(
-                        'Home',
+                        'Store',
                         style: FlutterFlowTheme.of(context).bodySmall.override(
                               fontFamily: 'Open Sans',
                               color: FlutterFlowTheme.of(context).primary,
                             ),
                       ),
+                    if (responsiveVisibility(
+                      context: context,
+                      phone: false,
+                      tablet: false,
+                      tabletLandscape: false,
+                      desktop: false,
+                    ))
                       Text(
-                        'About',
+                        'Community',
                         style: FlutterFlowTheme.of(context).bodySmall.override(
                               fontFamily: 'Open Sans',
                               color: FlutterFlowTheme.of(context).primary,
                             ),
                       ),
-                      if (responsiveVisibility(
-                        context: context,
-                        phone: false,
-                        tablet: false,
-                        tabletLandscape: false,
-                        desktop: false,
-                      ))
-                        Text(
-                          'Store',
-                          style:
-                              FlutterFlowTheme.of(context).bodySmall.override(
-                                    fontFamily: 'Open Sans',
-                                    color: FlutterFlowTheme.of(context).primary,
-                                  ),
-                        ),
-                      if (responsiveVisibility(
-                        context: context,
-                        phone: false,
-                        tablet: false,
-                        tabletLandscape: false,
-                        desktop: false,
-                      ))
-                        Text(
-                          'Community',
-                          style:
-                              FlutterFlowTheme.of(context).bodySmall.override(
-                                    fontFamily: 'Open Sans',
-                                    color: FlutterFlowTheme.of(context).primary,
-                                  ),
-                        ),
-                    ],
-                  ),
-                  Column(
+                  ],
+                ),
+                Padding(
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 16.0),
+                  child: Column(
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       Padding(
@@ -150,117 +147,98 @@ class _FooterWidgetState extends State<FooterWidget> {
                                   ),
                         ),
                       ),
-                      InkWell(
-                        splashColor: Colors.transparent,
-                        focusColor: Colors.transparent,
-                        hoverColor: Colors.transparent,
-                        highlightColor: Colors.transparent,
-                        onTap: () async {
-                          logFirebaseEvent('FOOTER_COMP_Text_1e0eim6j_ON_TAP');
-                          await launchURL('tel:214-699-8270');
-                        },
-                        child: Text(
-                          '214-699-8270',
-                          style:
-                              FlutterFlowTheme.of(context).bodySmall.override(
-                                    fontFamily: 'Open Sans',
-                                    color: FlutterFlowTheme.of(context).primary,
-                                  ),
+                    ],
+                  ),
+                ),
+                Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Text(
+                      'Social Media',
+                      style:
+                          FlutterFlowTheme.of(context).headlineSmall.override(
+                                fontFamily: 'Merriweather',
+                                fontWeight: FontWeight.w600,
+                              ),
+                    ),
+                    Row(
+                      mainAxisSize: MainAxisSize.max,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        FlutterFlowIconButton(
+                          buttonSize: 42.0,
+                          icon: FaIcon(
+                            FontAwesomeIcons.facebook,
+                            color: FlutterFlowTheme.of(context).primary,
+                            size: 24.0,
+                          ),
+                          onPressed: () async {
+                            logFirebaseEvent('FOOTER_COMP_facebook_ICN_ON_TAP');
+                            await launchURL(
+                                'https://www.facebook.com/soundmindjournal');
+                          },
                         ),
-                      ),
-                    ],
-                  ),
-                  Column(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      Text(
-                        'Social Media',
-                        style:
-                            FlutterFlowTheme.of(context).headlineSmall.override(
-                                  fontFamily: 'Merriweather',
-                                  fontWeight: FontWeight.w600,
-                                ),
-                      ),
-                      Row(
-                        mainAxisSize: MainAxisSize.max,
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
+                        if (responsiveVisibility(
+                          context: context,
+                          phone: false,
+                          tablet: false,
+                          tabletLandscape: false,
+                          desktop: false,
+                        ))
                           FlutterFlowIconButton(
                             buttonSize: 42.0,
                             icon: FaIcon(
-                              FontAwesomeIcons.facebook,
-                              color: FlutterFlowTheme.of(context).primary,
+                              FontAwesomeIcons.twitter,
+                              color: FlutterFlowTheme.of(context).secondaryText,
                               size: 24.0,
                             ),
-                            onPressed: () async {
-                              logFirebaseEvent(
-                                  'FOOTER_COMP_facebook_ICN_ON_TAP');
-                              await launchURL(
-                                  'https://www.facebook.com/soundmindjournal');
+                            onPressed: () {
+                              print('IconButton pressed ...');
                             },
                           ),
-                          if (responsiveVisibility(
-                            context: context,
-                            phone: false,
-                            tablet: false,
-                            tabletLandscape: false,
-                            desktop: false,
-                          ))
-                            FlutterFlowIconButton(
-                              buttonSize: 42.0,
-                              icon: FaIcon(
-                                FontAwesomeIcons.twitter,
-                                color:
-                                    FlutterFlowTheme.of(context).secondaryText,
-                                size: 24.0,
-                              ),
-                              onPressed: () {
-                                print('IconButton pressed ...');
-                              },
-                            ),
+                        FlutterFlowIconButton(
+                          buttonSize: 42.0,
+                          icon: FaIcon(
+                            FontAwesomeIcons.instagram,
+                            color: FlutterFlowTheme.of(context).primary,
+                            size: 24.0,
+                          ),
+                          onPressed: () async {
+                            logFirebaseEvent(
+                                'FOOTER_COMP_instagram_ICN_ON_TAP');
+                            await launchURL(
+                                'https://www.instagram.com/soundmindjournal/');
+                          },
+                        ),
+                        if (responsiveVisibility(
+                          context: context,
+                          phone: false,
+                          tablet: false,
+                          tabletLandscape: false,
+                          desktop: false,
+                        ))
                           FlutterFlowIconButton(
                             buttonSize: 42.0,
                             icon: FaIcon(
-                              FontAwesomeIcons.instagram,
-                              color: FlutterFlowTheme.of(context).primary,
+                              FontAwesomeIcons.youtube,
+                              color: FlutterFlowTheme.of(context).secondaryText,
                               size: 24.0,
                             ),
-                            onPressed: () async {
-                              logFirebaseEvent(
-                                  'FOOTER_COMP_instagram_ICN_ON_TAP');
-                              await launchURL(
-                                  'https://www.instagram.com/soundmindjournal/');
+                            onPressed: () {
+                              print('IconButton pressed ...');
                             },
                           ),
-                          if (responsiveVisibility(
-                            context: context,
-                            phone: false,
-                            tablet: false,
-                            tabletLandscape: false,
-                            desktop: false,
-                          ))
-                            FlutterFlowIconButton(
-                              buttonSize: 42.0,
-                              icon: FaIcon(
-                                FontAwesomeIcons.youtube,
-                                color:
-                                    FlutterFlowTheme.of(context).secondaryText,
-                                size: 24.0,
-                              ),
-                              onPressed: () {
-                                print('IconButton pressed ...');
-                              },
-                            ),
-                        ],
-                      ),
-                    ],
-                  ),
-                  Column(
-                    mainAxisSize: MainAxisSize.min,
+                      ],
+                    ),
+                  ],
+                ),
+                Flexible(
+                  child: Column(
+                    mainAxisSize: MainAxisSize.max,
                     children: [
                       Padding(
                         padding:
-                            const EdgeInsetsDirectional.fromSTEB(0.0, 17.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
                         child: Text(
                           'Legal Information',
                           style: FlutterFlowTheme.of(context)
@@ -349,25 +327,28 @@ class _FooterWidgetState extends State<FooterWidget> {
                       ),
                     ],
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
-            InkWell(
-              splashColor: Colors.transparent,
-              focusColor: Colors.transparent,
-              hoverColor: Colors.transparent,
-              highlightColor: Colors.transparent,
-              onTap: () async {
-                logFirebaseEvent('FOOTER_COMP_Text_mac2xwhy_ON_TAP');
+            Padding(
+              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 0.0),
+              child: InkWell(
+                splashColor: Colors.transparent,
+                focusColor: Colors.transparent,
+                hoverColor: Colors.transparent,
+                highlightColor: Colors.transparent,
+                onTap: () async {
+                  logFirebaseEvent('FOOTER_COMP_Text_mac2xwhy_ON_TAP');
 
-                context.pushNamed('Thankyou');
-              },
-              child: Text(
-                '© 2023 Carolina Dawn. All rights reserved.',
-                style: FlutterFlowTheme.of(context).bodySmall.override(
-                      fontFamily: 'Open Sans',
-                      color: FlutterFlowTheme.of(context).primary,
-                    ),
+                  context.pushNamed('Thankyou');
+                },
+                child: Text(
+                  '© 2024 Carolina Dawn. All rights reserved.',
+                  style: FlutterFlowTheme.of(context).bodySmall.override(
+                        fontFamily: 'Open Sans',
+                        color: FlutterFlowTheme.of(context).primary,
+                      ),
+                ),
               ),
             ),
           ],

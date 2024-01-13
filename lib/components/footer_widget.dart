@@ -111,56 +111,44 @@ class _FooterWidgetState extends State<FooterWidget> {
                       ),
                   ],
                 ),
-                Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Padding(
-                      padding:
-                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
-                      child: Text(
-                        'Contact Information',
-                        style:
-                            FlutterFlowTheme.of(context).headlineSmall.override(
-                                  fontFamily: 'Merriweather',
-                                  fontWeight: FontWeight.w600,
-                                ),
+                Padding(
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 16.0),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Padding(
+                        padding:
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                        child: Text(
+                          'Contact Information',
+                          style: FlutterFlowTheme.of(context)
+                              .headlineSmall
+                              .override(
+                                fontFamily: 'Merriweather',
+                                fontWeight: FontWeight.w600,
+                              ),
+                        ),
                       ),
-                    ),
-                    InkWell(
-                      splashColor: Colors.transparent,
-                      focusColor: Colors.transparent,
-                      hoverColor: Colors.transparent,
-                      highlightColor: Colors.transparent,
-                      onTap: () async {
-                        logFirebaseEvent('FOOTER_COMP_Text_b85o5nbe_ON_TAP');
-                        await launchURL('mailto:carolinadawnmoore@gmail.com');
-                      },
-                      child: Text(
-                        'Email: carolinadawnmoore@gmail.com',
-                        style: FlutterFlowTheme.of(context).bodySmall.override(
-                              fontFamily: 'Open Sans',
-                              color: FlutterFlowTheme.of(context).primary,
-                            ),
+                      InkWell(
+                        splashColor: Colors.transparent,
+                        focusColor: Colors.transparent,
+                        hoverColor: Colors.transparent,
+                        highlightColor: Colors.transparent,
+                        onTap: () async {
+                          logFirebaseEvent('FOOTER_COMP_Text_b85o5nbe_ON_TAP');
+                          await launchURL('mailto:carolinadawnmoore@gmail.com');
+                        },
+                        child: Text(
+                          'Email: carolinadawnmoore@gmail.com',
+                          style:
+                              FlutterFlowTheme.of(context).bodySmall.override(
+                                    fontFamily: 'Open Sans',
+                                    color: FlutterFlowTheme.of(context).primary,
+                                  ),
+                        ),
                       ),
-                    ),
-                    InkWell(
-                      splashColor: Colors.transparent,
-                      focusColor: Colors.transparent,
-                      hoverColor: Colors.transparent,
-                      highlightColor: Colors.transparent,
-                      onTap: () async {
-                        logFirebaseEvent('FOOTER_COMP_Text_1e0eim6j_ON_TAP');
-                        await launchURL('tel:214-699-8270');
-                      },
-                      child: Text(
-                        '214-699-8270',
-                        style: FlutterFlowTheme.of(context).bodySmall.override(
-                              fontFamily: 'Open Sans',
-                              color: FlutterFlowTheme.of(context).primary,
-                            ),
-                      ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
                 Column(
                   mainAxisSize: MainAxisSize.min,

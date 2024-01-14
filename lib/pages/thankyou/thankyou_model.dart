@@ -1,6 +1,6 @@
-import '/components/footer_stack_widget.dart';
-import '/components/footer_widget.dart';
-import '/components/top_nav_widget.dart';
+import '/components/footer/footer_widget.dart';
+import '/components/footer_stack/footer_stack_widget.dart';
+import '/components/top_nav/top_nav_widget.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'thankyou_widget.dart' show ThankyouWidget;
 import 'package:flutter/material.dart';

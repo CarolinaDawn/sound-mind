@@ -48,7 +48,7 @@ class _FooterStackWidgetState extends State<FooterStackWidget> {
         child: Column(
           mainAxisSize: MainAxisSize.max,
           children: [
-            Expanded(
+            Flexible(
               child: Padding(
                 padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 12.0),
                 child: Row(
@@ -323,26 +323,6 @@ class _FooterStackWidgetState extends State<FooterStackWidget> {
                                   ),
                             ),
                           ),
-                          InkWell(
-                            splashColor: Colors.transparent,
-                            focusColor: Colors.transparent,
-                            hoverColor: Colors.transparent,
-                            highlightColor: Colors.transparent,
-                            onTap: () async {
-                              logFirebaseEvent(
-                                  'FOOTER_STACK_COMP_Text_qw0g8t7k_ON_TAP');
-                              await launchURL('tel:214-699-8270');
-                            },
-                            child: Text(
-                              '214-699-8270',
-                              style: FlutterFlowTheme.of(context)
-                                  .bodySmall
-                                  .override(
-                                    fontFamily: 'Open Sans',
-                                    color: FlutterFlowTheme.of(context).primary,
-                                  ),
-                            ),
-                          ),
                         ],
                       ),
                     ),
@@ -350,115 +330,121 @@ class _FooterStackWidgetState extends State<FooterStackWidget> {
                 ),
               ),
             ),
-            Padding(
-              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 12.0),
-              child: Row(
-                mainAxisSize: MainAxisSize.max,
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Column(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      Padding(
-                        padding:
-                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
-                        child: Text(
-                          'Legal Information',
-                          style: FlutterFlowTheme.of(context)
-                              .headlineSmall
-                              .override(
-                                fontFamily: 'Merriweather',
-                                fontWeight: FontWeight.w600,
-                              ),
+            Flexible(
+              child: Padding(
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 12.0),
+                child: Row(
+                  mainAxisSize: MainAxisSize.max,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Padding(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
+                              0.0, 0.0, 0.0, 8.0),
+                          child: Text(
+                            'Legal Information',
+                            style: FlutterFlowTheme.of(context)
+                                .headlineSmall
+                                .override(
+                                  fontFamily: 'Merriweather',
+                                  fontWeight: FontWeight.w600,
+                                ),
+                          ),
                         ),
-                      ),
-                      InkWell(
-                        splashColor: Colors.transparent,
-                        focusColor: Colors.transparent,
-                        hoverColor: Colors.transparent,
-                        highlightColor: Colors.transparent,
-                        onTap: () async {
-                          logFirebaseEvent(
-                              'FOOTER_STACK_COMP_Text_2ihuamh1_ON_TAP');
-                          await launchURL(
-                              'https://www.termsfeed.com/live/4645f677-35f1-4cbc-8e5a-471632ba5f80');
-                        },
-                        child: Text(
-                          'Privacy Policy',
-                          style:
-                              FlutterFlowTheme.of(context).bodySmall.override(
-                                    fontFamily: 'Open Sans',
-                                    color: FlutterFlowTheme.of(context).primary,
-                                  ),
+                        InkWell(
+                          splashColor: Colors.transparent,
+                          focusColor: Colors.transparent,
+                          hoverColor: Colors.transparent,
+                          highlightColor: Colors.transparent,
+                          onTap: () async {
+                            logFirebaseEvent(
+                                'FOOTER_STACK_COMP_Text_2ihuamh1_ON_TAP');
+                            await launchURL(
+                                'https://www.termsfeed.com/live/4645f677-35f1-4cbc-8e5a-471632ba5f80');
+                          },
+                          child: Text(
+                            'Privacy Policy',
+                            style: FlutterFlowTheme.of(context)
+                                .bodySmall
+                                .override(
+                                  fontFamily: 'Open Sans',
+                                  color: FlutterFlowTheme.of(context).primary,
+                                ),
+                          ),
                         ),
-                      ),
-                      InkWell(
-                        splashColor: Colors.transparent,
-                        focusColor: Colors.transparent,
-                        hoverColor: Colors.transparent,
-                        highlightColor: Colors.transparent,
-                        onTap: () async {
-                          logFirebaseEvent(
-                              'FOOTER_STACK_COMP_Text_56rkl1tv_ON_TAP');
-                          await launchURL(
-                              'https://www.termsandconditionsgenerator.com/live.php?token=9m2SOat3w1YC4aLMrCKb09gvkuxUNSfR');
-                        },
-                        child: Text(
-                          'Terms + Conditions',
-                          style:
-                              FlutterFlowTheme.of(context).bodySmall.override(
-                                    fontFamily: 'Open Sans',
-                                    color: FlutterFlowTheme.of(context).primary,
-                                  ),
+                        InkWell(
+                          splashColor: Colors.transparent,
+                          focusColor: Colors.transparent,
+                          hoverColor: Colors.transparent,
+                          highlightColor: Colors.transparent,
+                          onTap: () async {
+                            logFirebaseEvent(
+                                'FOOTER_STACK_COMP_Text_56rkl1tv_ON_TAP');
+                            await launchURL(
+                                'https://www.termsandconditionsgenerator.com/live.php?token=9m2SOat3w1YC4aLMrCKb09gvkuxUNSfR');
+                          },
+                          child: Text(
+                            'Terms + Conditions',
+                            style: FlutterFlowTheme.of(context)
+                                .bodySmall
+                                .override(
+                                  fontFamily: 'Open Sans',
+                                  color: FlutterFlowTheme.of(context).primary,
+                                ),
+                          ),
                         ),
-                      ),
-                      InkWell(
-                        splashColor: Colors.transparent,
-                        focusColor: Colors.transparent,
-                        hoverColor: Colors.transparent,
-                        highlightColor: Colors.transparent,
-                        onTap: () async {
-                          logFirebaseEvent(
-                              'FOOTER_STACK_COMP_Text_v8hubt5j_ON_TAP');
-                          await launchURL(
-                              'https://www.termsfeed.com/live/015477c1-0834-4633-9b68-3c5c637771a6');
-                        },
-                        child: Text(
-                          'Cookie Policy',
-                          style:
-                              FlutterFlowTheme.of(context).bodySmall.override(
-                                    fontFamily: 'Open Sans',
-                                    color: FlutterFlowTheme.of(context).primary,
-                                  ),
+                        InkWell(
+                          splashColor: Colors.transparent,
+                          focusColor: Colors.transparent,
+                          hoverColor: Colors.transparent,
+                          highlightColor: Colors.transparent,
+                          onTap: () async {
+                            logFirebaseEvent(
+                                'FOOTER_STACK_COMP_Text_v8hubt5j_ON_TAP');
+                            await launchURL(
+                                'https://www.termsfeed.com/live/015477c1-0834-4633-9b68-3c5c637771a6');
+                          },
+                          child: Text(
+                            'Cookie Policy',
+                            style: FlutterFlowTheme.of(context)
+                                .bodySmall
+                                .override(
+                                  fontFamily: 'Open Sans',
+                                  color: FlutterFlowTheme.of(context).primary,
+                                ),
+                          ),
                         ),
-                      ),
-                      InkWell(
-                        splashColor: Colors.transparent,
-                        focusColor: Colors.transparent,
-                        hoverColor: Colors.transparent,
-                        highlightColor: Colors.transparent,
-                        onTap: () async {
-                          logFirebaseEvent(
-                              'FOOTER_STACK_COMP_Text_eiuv91a2_ON_TAP');
+                        InkWell(
+                          splashColor: Colors.transparent,
+                          focusColor: Colors.transparent,
+                          hoverColor: Colors.transparent,
+                          highlightColor: Colors.transparent,
+                          onTap: () async {
+                            logFirebaseEvent(
+                                'FOOTER_STACK_COMP_Text_eiuv91a2_ON_TAP');
 
-                          context.pushNamed('ShippingPolicy');
-                        },
-                        child: Text(
-                          'Shipping Policy',
-                          style:
-                              FlutterFlowTheme.of(context).bodySmall.override(
-                                    fontFamily: 'Open Sans',
-                                    color: FlutterFlowTheme.of(context).primary,
-                                  ),
+                            context.pushNamed('ShippingPolicy');
+                          },
+                          child: Text(
+                            'Shipping Policy',
+                            style: FlutterFlowTheme.of(context)
+                                .bodySmall
+                                .override(
+                                  fontFamily: 'Open Sans',
+                                  color: FlutterFlowTheme.of(context).primary,
+                                ),
+                          ),
                         ),
-                      ),
-                    ],
-                  ),
-                ],
+                      ],
+                    ),
+                  ],
+                ),
               ),
             ),
             Text(
-              '© 2023 Carolina Dawn. All rights reserved.',
+              '© 2024 Carolina Dawn. All rights reserved.',
               style: FlutterFlowTheme.of(context).bodySmall.override(
                     fontFamily: 'Open Sans',
                     color: FlutterFlowTheme.of(context).primary,

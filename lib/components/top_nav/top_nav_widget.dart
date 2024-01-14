@@ -1,4 +1,4 @@
-import '/components/small_navigation_widget.dart';
+import '/components/small_navigation/small_navigation_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:aligned_dialog/aligned_dialog.dart';
@@ -53,24 +53,21 @@ class _TopNavWidgetState extends State<TopNavWidget> {
         child: Row(
           mainAxisSize: MainAxisSize.max,
           children: [
-            Padding(
-              padding: const EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 0.0, 0.0),
-              child: InkWell(
-                splashColor: Colors.transparent,
-                focusColor: Colors.transparent,
-                hoverColor: Colors.transparent,
-                highlightColor: Colors.transparent,
-                onTap: () async {
-                  logFirebaseEvent('TOP_NAV_COMP_lightMode_ON_TAP');
+            InkWell(
+              splashColor: Colors.transparent,
+              focusColor: Colors.transparent,
+              hoverColor: Colors.transparent,
+              highlightColor: Colors.transparent,
+              onTap: () async {
+                logFirebaseEvent('TOP_NAV_COMP_lightMode_ON_TAP');
 
-                  context.pushNamed('Home');
-                },
-                child: Image.asset(
-                  'assets/images/The_Sound_Mind_Journal.png',
-                  width: 180.0,
-                  height: 40.0,
-                  fit: BoxFit.contain,
-                ),
+                context.pushNamed('Home');
+              },
+              child: Image.asset(
+                'assets/images/The_Sound_Mind_Journal.png',
+                width: 180.0,
+                height: 40.0,
+                fit: BoxFit.contain,
               ),
             ),
             if (responsiveVisibility(

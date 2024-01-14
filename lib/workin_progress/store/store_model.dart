@@ -1,4 +1,4 @@
-import '/components/top_nav_widget.dart';
+import '/components/top_nav/top_nav_widget.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'store_widget.dart' show StoreWidget;
 import 'package:flutter/material.dart';

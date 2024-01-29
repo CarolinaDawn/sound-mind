@@ -8,7 +8,7 @@ class SmallNavigationWidget extends StatefulWidget {
   const SmallNavigationWidget({super.key});
 
   @override
-  _SmallNavigationWidgetState createState() => _SmallNavigationWidgetState();
+  State<SmallNavigationWidget> createState() => _SmallNavigationWidgetState();
 }
 
 class _SmallNavigationWidgetState extends State<SmallNavigationWidget> {

@@ -86,6 +86,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               name: 'Thankyou',
               path: 'confirmation',
               builder: (context, params) => const ThankyouWidget(),
+            ),
+            FFRoute(
+              name: 'ComingSoon',
+              path: 'comingSoon',
+              builder: (context, params) => const ComingSoonWidget(),
             )
           ].map((r) => r.toRoute(appStateNotifier)).toList(),
         ),

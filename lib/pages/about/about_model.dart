@@ -15,6 +15,8 @@ class AboutModel extends FlutterFlowModel<AboutWidget> {
   late FooterModel footerModel;
   // Model for FooterStack component.
   late FooterStackModel footerStackModel;
+  // State field(s) for MouseRegion widget.
+  bool mouseRegionHovered = false;
 
   /// Initialization and disposal methods.
 

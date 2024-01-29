@@ -10,7 +10,7 @@ class FooterStackWidget extends StatefulWidget {
   const FooterStackWidget({super.key});
 
   @override
-  _FooterStackWidgetState createState() => _FooterStackWidgetState();
+  State<FooterStackWidget> createState() => _FooterStackWidgetState();
 }
 
 class _FooterStackWidgetState extends State<FooterStackWidget> {

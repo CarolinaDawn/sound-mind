@@ -10,7 +10,7 @@ class CommunityWidget extends StatefulWidget {
   const CommunityWidget({super.key});
 
   @override
-  _CommunityWidgetState createState() => _CommunityWidgetState();
+  State<CommunityWidget> createState() => _CommunityWidgetState();
 }
 
 class _CommunityWidgetState extends State<CommunityWidget> {

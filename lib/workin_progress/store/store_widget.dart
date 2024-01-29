@@ -10,7 +10,7 @@ class StoreWidget extends StatefulWidget {
   const StoreWidget({super.key});
 
   @override
-  _StoreWidgetState createState() => _StoreWidgetState();
+  State<StoreWidget> createState() => _StoreWidgetState();
 }
 
 class _StoreWidgetState extends State<StoreWidget> {

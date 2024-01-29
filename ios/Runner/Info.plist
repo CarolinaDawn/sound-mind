@@ -37,10 +37,10 @@
         <key>CFBundleTypeRole</key>
         <string>Editor</string>
         <key>CFBundleURLName</key>
-        <string>thesoundmindjournal.com</string>
+        <string>soundmindjournal.com</string>
         <key>CFBundleURLSchemes</key>
         <array>
-        <string>thesoundmindjournal</string>
+        <string>soundmindjournal</string>
         </array>
         </dict>
     </array>

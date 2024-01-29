@@ -9,7 +9,7 @@ class ShippingPolicyWidget extends StatefulWidget {
   const ShippingPolicyWidget({super.key});
 
   @override
-  _ShippingPolicyWidgetState createState() => _ShippingPolicyWidgetState();
+  State<ShippingPolicyWidget> createState() => _ShippingPolicyWidgetState();
 }
 
 class _ShippingPolicyWidgetState extends State<ShippingPolicyWidget> {

@@ -10,7 +10,7 @@ class TopNavWidget extends StatefulWidget {
   const TopNavWidget({super.key});
 
   @override
-  _TopNavWidgetState createState() => _TopNavWidgetState();
+  State<TopNavWidget> createState() => _TopNavWidgetState();
 }
 
 class _TopNavWidgetState extends State<TopNavWidget> {

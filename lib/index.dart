@@ -6,3 +6,5 @@ export '/workin_progress/store/store_widget.dart' show StoreWidget;
 export '/pages/shipping_policy/shipping_policy_widget.dart'
     show ShippingPolicyWidget;
 export '/pages/thankyou/thankyou_widget.dart' show ThankyouWidget;
+export '/workin_progress/coming_soon/coming_soon_widget.dart'
+    show ComingSoonWidget;

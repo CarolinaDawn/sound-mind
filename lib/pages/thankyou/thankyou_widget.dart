@@ -13,7 +13,7 @@ class ThankyouWidget extends StatefulWidget {
   const ThankyouWidget({super.key});
 
   @override
-  _ThankyouWidgetState createState() => _ThankyouWidgetState();
+  State<ThankyouWidget> createState() => _ThankyouWidgetState();
 }
 
 class _ThankyouWidgetState extends State<ThankyouWidget> {
